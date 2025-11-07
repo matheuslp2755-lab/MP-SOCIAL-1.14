@@ -226,9 +226,6 @@ const Feed: React.FC = () => {
         // FIX: Explicitly type the `prev` parameter in the state updater for
         // `viewingUserWithPulses`. This resolves TypeScript errors where `prev` was
         // being inferred as `unknown`, preventing property access and object spreading.
-        // FIX: Explicitly type the `prev` parameter in the state updater for
-        // `viewingUserWithPulses`. This resolves TypeScript errors where `prev` was
-        // being inferred as `unknown`, preventing property access and object spreading.
         setViewingUserWithPulses((prev: UserWithPulses | null) => {
             if (!prev) return null;
             const updatedPulses = prev.pulses.filter(p => p.id !== pulseToDelete.id);
