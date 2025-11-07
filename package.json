@@ -2,6 +2,9 @@
   "name": "mp-social",
   "version": "1.0.0",
   "description": "A visually appealing login page for a social media application, inspired by Instagram, built with React, TypeScript, and Tailwind CSS.",
+  "scripts": {
+    "build": "echo \"Build step not required for this project, adding dummy script for Netlify.\""
+  },
   "dependencies": {
     "patch-package": "^6.5.1"
   }
